@@ -3,7 +3,7 @@ $pageTitle = "Home";
 include "view-header.php";
 ?>
 
-<body>
+<body class="text-center p-5">
       <H1>Color Picker</H1>
       <input type="color" id="color-picker" class="form-control" onchange="changeBackgroundColor()">
       <div id="color-box" style="width: 100px; height: 100px; border: 1px solid #000; margin-top: 10px;"></div>
