@@ -47,7 +47,7 @@
               </li>
               
               <li class="nav-item">
-                <a class="nav-link" href="page3.php">Page 3</a>
+                <a class="nav-link" href="live-clock.php">Clock</a>
               </li> 
               
               <li class="nav-item">
