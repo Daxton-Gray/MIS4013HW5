@@ -3,7 +3,8 @@ $pageTitle = "Home";
 include "view-header.php";
 ?>
 
-<body>
+<body class="text-center p-5">
+      <H1>Drag and Drop</H1>
       <div id="drag-item" draggable="true" ondragstart="drag(event)" style="width: 100px; height: 100px; background: red;"></div>
       <div ondrop="drop(event)" ondragover="allowDrop(event)" style="width: 200px; height: 200px; border: 1px dashed #000; margin-top: 20px;"></div>
 
