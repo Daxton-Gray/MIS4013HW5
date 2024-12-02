@@ -4,26 +4,41 @@ include "view-header.php";
 ?>
 
 <body class="text-center p-5">
-      <H1>Drag and Drop</H1>
-      <div id="drag-item" draggable="true" ondragstart="drag(event)" style="width: 100px; height: 100px; background: red;"></div>
-      <div ondrop="drop(event)" ondragover="allowDrop(event)" style="width: 200px; height: 200px; border: 1px dashed #000; margin-top: 20px;"></div>
+    <h1>Drag and Drop</h1>
+    <p>Drag the red box into the dashed drop area.</p>
+    
+    <div id="drag-item" draggable="true" ondragstart="drag(event)">Drag Me</div>
+    
+    <div id="drop-area" ondragover="allowDrop(event)" ondrop="drop(event)" ondragenter="addHover(event)" ondragleave="removeHover(event)">
+        Drop Here
+    </div>
 
-      <script>
-      function allowDrop(event) {
-          event.preventDefault();
-      }
+    <script>
+        function allowDrop(event) {
+            event.preventDefault();
+        }
 
-      function drag(event) {
-          event.dataTransfer.setData("text", event.target.id);
-      }
+        function drag(event) {
+            event.dataTransfer.setData("text", event.target.id);
+        }
 
-      function drop(event) {
-          event.preventDefault();
-          const data = event.dataTransfer.getData("text");
-          event.target.appendChild(document.getElementById(data));
-      }
+        function drop(event) {
+            event.preventDefault();
+            const data = event.dataTransfer.getData("text");
+            const draggedElement = document.getElementById(data);
+            event.target.appendChild(draggedElement);
 
-      </script>
+            event.target.classList.remove('hover');
+        }
+
+        function addHover(event) {
+            event.target.classList.add('hover');
+        }
+
+        function removeHover(event) {
+            event.target.classList.remove('hover');
+        }
+    </script>
 </body>
 
 <?php
