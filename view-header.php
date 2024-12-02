@@ -24,7 +24,7 @@
             margin: 20px 0;
         }
 
-        .container {
+      .container {
             max-width: 300px;
             margin: 50px auto;
         }
