@@ -29,7 +29,7 @@
             height: 150px;
             border: 2px solid #000;
             margin-top: 20px;
-            background-color: #000000;
+            background-color: #000;
         }
 
       #drag-item {
