@@ -3,7 +3,7 @@ $pageTitle = "Home";
 include "view-header.php";
 ?>
       
-<body>
+<body class="text-center p-5">
    <h1>Random Quote</h1>
       <p id="quote-display">Click the button for a random quote!</p>
       <button class="btn btn-warning" onclick="generateRandomQuote()">Get Quote</button>
