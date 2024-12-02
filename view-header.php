@@ -24,6 +24,14 @@
             margin: 20px 0;
         }
 
+      #color-box {
+            width: 150px;
+            height: 150px;
+            border: 2px solid #000;
+            margin-top: 20px;
+            background-color: #ffffff;
+        }
+
       #drag-item {
             width: 100px;
             height: 100px;
