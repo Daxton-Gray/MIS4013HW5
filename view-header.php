@@ -43,7 +43,7 @@
               </li>
               
               <li class="nav-item">
-                <a class="nav-link" href="page2.php">Page 2</a>
+                <a class="nav-link" href="random-quote.php">Random Quote</a>
               </li>
               
               <li class="nav-item">
