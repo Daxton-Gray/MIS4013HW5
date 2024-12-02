@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Clock";
+$pageTitle = "Timer";
 include "view-header.php";
 ?>
       
