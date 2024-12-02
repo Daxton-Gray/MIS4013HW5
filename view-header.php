@@ -33,7 +33,14 @@
             background-color: #000;
         }
 
-      #drag-item {
+      #drag-items {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+
+        .drag-item {
             width: 100px;
             height: 100px;
             background-color: red;
@@ -42,7 +49,6 @@
             color: white;
             font-weight: bold;
             cursor: grab;
-            margin: 20px auto;
         }
 
         #drop-area {
@@ -54,6 +60,18 @@
             line-height: 200px;
             color: #666;
             font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .drag-item.small {
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            font-size: 14px;
         }
 
         #drop-area.hover {
