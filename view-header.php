@@ -33,51 +33,13 @@
             background-color: #000;
         }
 
-      #drag-items {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 20px;
-            justify-content: center;
-        }
+      .hover-effect {
+        transition: transform 0.3s ease-in-out;
+    }
 
-        .drag-item {
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            text-align: center;
-            line-height: 100px;
-            color: white;
-            font-weight: bold;
-            cursor: grab;
-        }
-
-        #drop-area {
-            width: 200px;
-            height: 200px;
-            border: 2px dashed #000;
-            margin: 20px auto;
-            text-align: center;
-            line-height: 200px;
-            color: #666;
-            font-size: 18px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .drag-item.small {
-            width: 80px;
-            height: 80px;
-            line-height: 80px;
-            font-size: 14px;
-        }
-
-        #drop-area.hover {
-            border-color: green;
-            color: green;
-        }
+    .hover-effect:hover {
+        transform: scale(1.2);
+    }
     </style>
   </head>
   
