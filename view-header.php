@@ -6,16 +6,44 @@
     <title><?=$pageTitle?></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
-        body.dark-mode {
-            background-color: #121212;
+      body.dark-mode {
+          background-color: #121212;
+          color: white;
+      }
+
+      body {
+          font-family: Arial, sans-serif;
+          background-color: white;
+          color: black;
+          transition: background-color 0.3s, color 0.3s;
+      }
+
+      #drag-item {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            text-align: center;
+            line-height: 100px;
             color: white;
+            font-weight: bold;
+            cursor: grab;
+            margin: 20px auto;
         }
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: white;
-            color: black;
-            transition: background-color 0.3s, color 0.3s;
+        #drop-area {
+            width: 200px;
+            height: 200px;
+            border: 2px dashed #000;
+            margin: 20px auto;
+            text-align: center;
+            line-height: 200px;
+            color: #666;
+            font-size: 18px;
+        }
+
+        #drop-area.hover {
+            border-color: green;
+            color: green;
         }
     </style>
   </head>
