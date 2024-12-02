@@ -34,7 +34,7 @@
             height: 150px;
             border: 2px solid #000;
             margin-top: 20px;
-            background-color: #ffffff; /* Default color */
+            background-color: #ffffff;
         }
 
         .container {
