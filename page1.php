@@ -2,10 +2,9 @@
 $pageTitle = "Home";
 include "view-header.php";
 ?>
-      
-      <h1>Page 1</h1>
+
 <body class="text-center p-5">
-    <h1>Toggle Theme Example</h1>
+    <h1>Toggle Light/Dark Mode</h1>
     <p>Current Theme: <span id="theme-text">Light Mode</span></p>
     <button class="btn btn-primary mt-3" onclick="toggleTheme()">Toggle Theme</button>
 
