@@ -4,19 +4,25 @@ include "view-header.php";
 ?>
       
 <body class="text-center p-5">
-   <h1>Live Clock</h1>
-      <p>Current Time: <span id="clock"></span></p>
-      <script>startClock();</script>
+      <H>Countdown Timer</H>
+      <input type="number" id="countdown-time" class="form-control" placeholder="Enter seconds">
+      <button class="btn btn-danger mt-2" onclick="startCountdown()">Start Countdown</button>
+      <p id="countdown-timer"></p>
 
       <script>
-            function startClock() {
-                  const clock = document.getElementById('clock');
-                  setInterval(() => {
-                        const now = new Date();
-                        clock.innerText = now.toLocaleTimeString();
-                  }, 1000);
-            }
-      </script>   
+      function startCountdown() {
+          let time = parseInt(document.getElementById('countdown-time').value);
+          const timer = document.getElementById('countdown-timer');
+          const interval = setInterval(() => {
+              if (time <= 0) {
+                  clearInterval(interval);
+                  timer.innerText = "Time's up!";
+              } else {
+                  timer.innerText = `Time left: ${time--} seconds`;
+              }
+          }, 1000);
+      }
+      </script>
 </body>
 
 
