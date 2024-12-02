@@ -16,8 +16,6 @@ include "view-header.php";
             themeText.innerText = body.classList.contains('dark-mode') ? "Dark Mode" : "Light Mode";
         }
     </script>
-    <!-- Bootstrap JS (optional for advanced components) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
       
 <?php
