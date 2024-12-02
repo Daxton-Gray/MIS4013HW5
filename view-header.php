@@ -78,7 +78,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="page5.php">Page 5</a>
+                <a class="nav-link" href="image-zoom.php">Image Zoom</a>
               </li>
               
             </ul>
