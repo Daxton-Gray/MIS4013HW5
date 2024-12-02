@@ -32,11 +32,6 @@
             background-color: #ffffff;
         }
 
-        .container {
-            text-align: center;
-            margin-top: 50px;
-        }
-
       #drag-item {
             width: 100px;
             height: 100px;
