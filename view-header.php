@@ -39,7 +39,7 @@
               </li>
               
               <li class="nav-item">
-                <a class="nav-link" href="page1.php">Page 1</a>
+                <a class="nav-link" href="light-dark.php">Light/Dark Mode</a>
               </li>
               
               <li class="nav-item">
