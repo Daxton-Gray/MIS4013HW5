@@ -29,6 +29,7 @@
             height: 150px;
             border: 2px solid #000;
             margin-top: 20px;
+            text-align: center;
             background-color: #000;
         }
 
