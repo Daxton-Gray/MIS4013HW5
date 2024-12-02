@@ -3,28 +3,43 @@ $pageTitle = "Clock";
 include "view-header.php";
 ?>
       
-<body class="text-center p-5">
-      <H>Countdown Timer</H>
-      <input type="number" id="countdown-time" class="form-control" placeholder="Enter seconds">
-      <button class="btn btn-danger mt-2" onclick="startCountdown()">Start Countdown</button>
-      <p id="countdown-timer"></p>
+<body>
+    <div class="container">
+        <h1>Countdown Timer</h1>
+        <p>Enter the countdown time in seconds:</p>
+        <input type="number" id="countdown-input" class="form-control" placeholder="Enter seconds" min="1">
+        <button class="btn btn-primary" onclick="startCountdown()">Start Countdown</button>
+        <div id="countdown-display">Time left: 0 seconds</div>
+    </div>
 
-      <script>
-      function startCountdown() {
-          let time = parseInt(document.getElementById('countdown-time').value);
-          const timer = document.getElementById('countdown-timer');
-          const interval = setInterval(() => {
-              if (time <= 0) {
-                  clearInterval(interval);
-                  timer.innerText = "Time's up!";
-              } else {
-                  timer.innerText = `Time left: ${time--} seconds`;
-              }
-          }, 1000);
-      }
-      </script>
+    <script>
+        let countdownInterval;
+
+        function startCountdown() {
+            clearInterval(countdownInterval);
+
+            const input = document.getElementById('countdown-input');
+            let time = parseInt(input.value);
+
+            if (isNaN(time) || time <= 0) {
+                alert("Please enter a valid positive number!");
+                return;
+            }
+
+            const display = document.getElementById('countdown-display');
+
+            countdownInterval = setInterval(() => {
+                if (time <= 0) {
+                    clearInterval(countdownInterval);
+                    display.innerText = "Time's up!";
+                } else {
+                    display.innerText = `Time left: ${time} seconds`;
+                    time--;
+                }
+            }, 1000);
+        }
+    </script>
 </body>
-
 
 <?php
 include "view-footer.php";
