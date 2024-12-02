@@ -81,7 +81,7 @@
               </li>
               
               <li class="nav-item">
-                <a class="nav-link" href="live-clock.php">Clock</a>
+                <a class="nav-link" href="timer.php">Timer</a>
               </li> 
               
               <li class="nav-item">
