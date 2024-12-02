@@ -3,8 +3,8 @@ $pageTitle = "Clock";
 include "view-header.php";
 ?>
       
-<body>
-    <div class="container">
+<body class="text-center p-5">
+    <div>
         <h1>Countdown Timer</h1>
         <p>Enter the countdown time in seconds:</p>
         <input type="number" id="countdown-input" class="form-control" placeholder="Enter seconds" min="1">
