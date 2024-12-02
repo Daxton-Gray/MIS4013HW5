@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Home";
+$pageTitle = "Quotes";
 include "view-header.php";
 ?>
       
