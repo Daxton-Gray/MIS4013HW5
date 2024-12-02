@@ -24,11 +24,6 @@
             margin: 20px 0;
         }
 
-      .container {
-            max-width: 300px;
-            margin: 50px auto;
-        }
-
       #color-box {
             width: 150px;
             height: 150px;
