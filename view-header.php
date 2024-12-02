@@ -26,23 +26,23 @@
               </li>
               
               <li class="nav-item">
-                <a class="nav-link" href="post.php">Page 1</a>
+                <a class="nav-link" href="page1.php">Page 1</a>
               </li>
               
               <li class="nav-item">
-                <a class="nav-link" href="post-result.php">Page 2</a>
+                <a class="nav-link" href="page2.php">Page 2</a>
               </li>
               
               <li class="nav-item">
-                <a class="nav-link" href="get.php">Page 3</a>
+                <a class="nav-link" href="page3.php">Page 3</a>
               </li> 
               
               <li class="nav-item">
-                <a class="nav-link" href="get-result.php">Page 4</a>
+                <a class="nav-link" href="page4.php">Page 4</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="get-result.php">Page 5</a>
+                <a class="nav-link" href="page5.php">Page 5</a>
               </li>
               
             </ul>
