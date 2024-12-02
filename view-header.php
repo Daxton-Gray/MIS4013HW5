@@ -18,6 +18,19 @@
           transition: background-color 0.3s, color 0.3s;
       }
 
+      #color-box {
+            width: 150px;
+            height: 150px;
+            border: 2px solid #000;
+            margin-top: 20px;
+            background-color: #ffffff; /* Default color */
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
       #drag-item {
             width: 100px;
             height: 100px;
